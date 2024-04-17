@@ -1,5 +1,6 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, Form
 from fastapi.middleware.cors import CORSMiddleware
+from pydantic import BaseModel
 
 app = FastAPI()
 
@@ -12,6 +13,19 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+class FormData(BaseModel):
+    string_input: str
+    integer_input: int
+
+
+@app.post("/submit-form")
+async def submit_form(data: FormData):
+    print("String Input:", data.string_input)
+    print("Integer Input:", data.integer_input)
+    return {"message": "Form submitted successfully"}
+
 @app.get("/")
 def read_root():
-    return {"message": "Hello from FastAPI"}
+    return {"message": "Bitch!"}
+
+

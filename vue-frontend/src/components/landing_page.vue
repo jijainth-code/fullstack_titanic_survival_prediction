@@ -10,7 +10,10 @@
         <div class="container">
           <h1>Titanic Survival Prediction</h1>
           <p>A ML model to predict if you will survive the Crash !</p>
-          <button class="cta-button">Wish me Luck 💪🏼</button>
+            <div class="button-container">
+                <router-link to="/predict"><button class="cta-button">Wish me Luck 💪🏼</button></router-link>
+                <router-link to="/basics"><button class="cta-button">Learn Basics ⚒️</button></router-link>
+            </div>
         </div>
       </div>
     </div>
@@ -72,20 +75,26 @@
     color: #7f8a95; /* Light text color */
     margin-bottom: 40px;
   }
+
+  .button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items vertically */
+}
   
   .cta-button {
-    padding: 15px 40px;
-    font-size: 18px;
-    background-color: #38a169; /* Green button color */
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .cta-button:hover {
-    background-color: #1f9d55; /* Darker green on hover */
-  }
+  padding: 15px 40px;
+  font-size: 18px;
+  background-color: #38a169; /* Green button color */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #1f9d55; /* Darker green on hover */
+}
   </style>
   
