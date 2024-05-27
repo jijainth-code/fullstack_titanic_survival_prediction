@@ -14,18 +14,19 @@ app.add_middleware(
 )
 
 class FormData(BaseModel):
-    string_input: str
-    integer_input: int
+    dropdown1: str
+    dropdown2: str
+    dropdown3: str
+    slider1: int
+    slider2: int
 
 
 @app.post("/submit-form")
 async def submit_form(data: FormData):
-    print("String Input:", data.string_input)
-    print("Integer Input:", data.integer_input)
+    print(data)
+    
     return {"message": "Form submitted successfully"}
 
 @app.get("/")
 def read_root():
-    return {"message": "Bitch!"}
-
-
+    return {"message": "Hello World!"}
