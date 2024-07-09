@@ -2,22 +2,9 @@
 
 ## Project Overview
 
-This project is part of the Summerterm 2024 AIN-B Software Engineering course led by Prof. Dr. Christoph Schober. The project consists of two main tasks:
+This project is part of the Summerterm 2024 AIN-B Software Engineering course led by Prof. Dr. Christoph Schober. 
 
-1. **Titanic Survivor App**: A web application to predict the survival of passengers in the Titanic accident.
-2. **Presentation**: A demonstration of the developed software, insights on the system architecture, and individual contributions.
 
-## Team Information
-
-- **Team Members**: 
-  - Aadi Alhuwalia : 22202107
-  - Aryan Jain : 22107593
-  - Avanish Kumar Singh : 22200727
-  - Bhanu Pratap Rana : 22201990
-  - Harsh Gurawaliya : 22109730
-  - Jijainth Dhinakaran : 22100952
-  - Nemish Kyada : 22212034
-  - Rohit Galani : 22209032
 
 ## Project Structure
 ```
